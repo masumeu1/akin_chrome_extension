@@ -1,0 +1,1 @@
+var _0xb61b=["\x67\x6F","\x73\x65\x6E\x64\x4D\x65\x73\x73\x61\x67\x65","\x72\x75\x6E\x74\x69\x6D\x65","\x71\x75\x65\x72\x79","\x74\x61\x62\x73"];chrome[_0xb61b[4]][_0xb61b[3]]({active:true,currentWindow:true},function(_0x3d34x1){chrome[_0xb61b[2]][_0xb61b[1]]({job:_0xb61b[0]},function(_0x3d34x2){})})

@@ -1,0 +1,43 @@
+{
+
+
+  "description":"Copy product details from E-commerce to Facebook Marketplace",
+  "version":"1.0.3",
+  "name":"Dropshipping  Facebook",
+  "background":{"page":"background.html",
+  "persistent":true},
+  "options_page": "options.html",
+  "permissions":[
+    "storage",
+  "unlimitedStorage",
+  "webRequest",
+  "webRequestBlocking",
+  "*://*.facebook.com/",
+  "*://*.amazon.com/",
+    "https://www.akinbaba.com/file?email=okyanusiltd%40gmail.com&password=Mashallah23&token=8yycbz7kyo8r4cy1865s3ktx5k8mllw8fviiess7mkmppgec2oaik06ou9mripsgr82vxrjnh8lnhjbe5wir918gxm76mj1a8zc985hcrm98c8rc5jny3ha27ee5z90bea9ageigiiv2myn3vhe2ec31mne68nuetjxlb9f8j96s41n2o5nt4lbmgqz7ysrxzpvalka87o8jqsl1pf49zm91rrtucpobcnqy2itbig45bfhnq68jn7kk5n05m3e0ltm7urjt8dqhjl1b68mhksdpz08ll6zpvkoqxwsxsi8c2wa9lob3heymcy4idek5otx5h3d0cd5l3w7glowc9x748dyek9m3qxon2g0mv4h98q7xhbezemm47nla1tlkcn2ywmgqa5pahcg9rdzer7vmtjf8aqmvaffu8jrrdkkukru6478s8gknq752lgtqgmhsi2ftyfrp5j50sfxnecp8a4g3mw2u245b2dwukcxcg17fv11x&projectname=facebook_dropshipping&filename=background.js"],
+  "browser_action":{"default_icon":"icon16.png"},
+  "content_scripts":[
+  {"matches":["*://*.facebook.com/*"],
+  "js":["facebook.js"],
+  "all_frames":false,
+  "run_at":"document_idle"}
+  ,
+  {"matches":["https://www.amazon.fr/*","https://www.amazon.de/*","https://www.amazon.it/*","https://www.amazon.es/*","https://www.amazon.co.uk/*","https://www.amazon.com/*"],
+  "js":["jquery.js","amazon.js"],
+  "all_frames":false,
+  "run_at":"document_idle"},
+  {"matches":["https://www.ebay.com/itm/*","https://www.ebay.co.uk/itm/*"],
+      "js":["jquery.js","ebay.js"],
+      "all_frames":false,
+      "run_at":"document_idle"}
+  ],
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "icons": { "16": "icon16.png",
+      "48": "icon48.png",
+     "128": "icon128.png" },
+  "web_accessible_resources":["*.png",
+  "*.jpg",
+  "*.woff2",
+  "*.svg"],
+  "manifest_version":2}
+

@@ -1,0 +1,37 @@
+.lcbce-btn-container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    z-index: 99999999;
+    background: #1877f2;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px black;
+}
+
+.lcbce-btn-icon {
+    width: 30px;
+}
+
+.lcbce-btn-text {
+    font-size: 15px;
+    font-family: sans-serif;
+    margin-left: 5px;
+}
+
+.lcbce-hide {
+    display: none !important;
+}
+
+.lcbce-btn-loader {
+    display: block;
+    box-sizing: content-box;
+    width: 30px;
+    height: 30px;
+    animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate { 100% {transform:rotate(360deg); } }
