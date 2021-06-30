@@ -43,7 +43,7 @@
         "all_frames":false,
         "run_at":"document_idle"},
         
-      {"matches":["https://www.etsy.com/listing/*"],
+      {"matches":["https://www.etsy.com/listing/*","https://www.etsy.com/uk/listing/*"],
           "js":["jquery.js","etsy.js"],
           "all_frames":false,
           "run_at":"document_idle"},
